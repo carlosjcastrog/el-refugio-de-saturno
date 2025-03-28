@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="El Refugio de Saturno - Restaurante de pastas artesanales con promociones y reservas online.">
     <meta name="keywords" content="restaurante, pastas, comida italiana, promociones, reservas">
-    <meta name="author" content="El Refugio de Saturno">
+    <meta name="author" content="Carlos José Castro Galante">
     <title>El Refugio de Saturno - Pastas Artesanales</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -16,9 +16,11 @@
             <a href="#" class="text-xl font-bold" aria-label="Inicio">🪐 El Refugio de Saturno</a>
             <button id="menu-toggle" class="block md:hidden text-gray-700 focus:outline-none" aria-label="Abrir menú">☰</button>
             <ul id="menu" class="hidden md:flex space-x-6">
-                <li><a href="#inicio" class="hover:text-gray-600">Inicio</a></li>
-                <li><a href="#menu" class="hover:text-gray-600">Menú</a></li>
-                <li><a href="#reservas" class="hover:text-gray-600">Reservas</a></li>
+                <li><a href="#inicio" class="hover:text-orange-600">Inicio</a></li>
+                <li><a href="#menu" class="hover:text-orange-600">Menú</a></li>
+                <li><a href="#promociones" class="hover:text-orange-600">Promociones</a></li>
+                <li><a href="#reservas" class="hover:text-orange-600">Reservas</a></li>
+                <li><a href="/ubicacion.html" class="hover:text-orange-600">Ubicación</a></li>
             </ul>
         </div>
     </nav>
@@ -28,7 +30,9 @@
         <ul class="space-y-4">
             <li><a href="#inicio" class="block">Inicio</a></li>
             <li><a href="#menu" class="block">Menú</a></li>
+            <li><a href="#promociones" class="hover:text-gray-600">Promociones</a></li>
             <li><a href="#reservas" class="block">Reservas</a></li>
+            <li><a href="/ubicacion.html" class="hover:text-gray-600">Ubicación</a></li>
         </ul>
     </div>
 
@@ -37,7 +41,7 @@
         <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('/img/restaurant.jpg');" role="presentation"></div>
         <div class="relative text-center max-w-3xl z-10">
             <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Bienvenidos a <span class="text-orange-600">El Refugio de Saturno</span></h1>
-            <p class="text-lg md:text-xl text-gray-300 mb-6">Disfrutá de las mejores <span class="text-orange-600 font-semibold">pastas artesanales</span>.</p>
+            <p class="text-lg md:text-xl text-gray-300 mb-6">Disfrutá de las mejores <span class="text-white font-semibold bg-orange-600">pastas artesanales</span>.</p>
             <a href="#reservas" class="bg-orange-600 text-black px-6 py-3 rounded-xl text-lg font-bold hover:text-white transition" aria-label="Reservar una mesa">Reservá tu Mesa 🚀</a>
         </div>
     </header>
@@ -48,35 +52,35 @@
             <h2 class="text-3xl font-bold mb-6">Nuestro Menú</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <div class="rounded-lg p-4 text-center">
-                    <img src="/img/spaghetti.jpg" alt="Plato de Spaghetti" class="w-32 h-32 mx-auto rounded-full">
+                    <img src="/img/spaghetti.jpg" alt="Plato de Spaghetti" class="w-32 h-32 mx-auto rounded-full border-2 border-transparent hover:border-orange-500 transition duration-300">
                     <h3 class="font-semibold mt-2">Spaghetti</h3>
                 </div>
                 <div class="brounded-lg p-4 text-center">
-                    <img src="/img/lasagna.jpg" alt="Plato de Lasagna" class="w-32 h-32 mx-auto rounded-full">
+                    <img src="/img/lasagna.jpg" alt="Plato de Lasagna" class="w-32 h-32 mx-auto rounded-full border-2 border-transparent hover:border-orange-500 transition duration-300">
                     <h3 class="font-semibold mt-2">Lasagna</h3>
                 </div>
                 <div class="rounded-lg p-4 text-center">
-                    <img src="/img/ñoquis.jpg" alt="Plato de Ñoquis" class="w-32 h-32 mx-auto rounded-full">
+                    <img src="/img/ñoquis.jpg" alt="Plato de Ñoquis" class="w-32 h-32 mx-auto rounded-full border-2 border-transparent hover:border-orange-500 transition duration-300">
                     <h3 class="font-semibold mt-2">Ñoquis</h3>
                 </div>
                 <div class="rounded-lg p-4 text-center">
-                    <img src="/img/ravioles.jpg" alt="Plato de Ravioles" class="w-32 h-32 mx-auto rounded-full">
+                    <img src="/img/ravioles.jpg" alt="Plato de Ravioles" class="w-32 h-32 mx-auto rounded-full border-2 border-transparent hover:border-orange-500 transition duration-300">
                     <h3 class="font-semibold mt-2">Ravioles</h3>
                 </div>
                 <div class="rounded-lg p-4 text-center">
-                    <img src="/img/fettuccine.jpg" alt="Plato de Fettuccine" class="w-32 h-32 mx-auto rounded-full">
+                    <img src="/img/fettuccine.jpg" alt="Plato de Fettuccine" class="w-32 h-32 mx-auto rounded-full border-2 border-transparent hover:border-orange-500 transition duration-300">
                     <h3 class="font-semibold mt-2">Fettuccine</h3>
                 </div>
                 <div class="rounded-lg p-4 text-center">
-                    <img src="/img/cavatappi.jpg" alt="Plato de Cavatappi" class="w-32 h-32 mx-auto rounded-full">
+                    <img src="/img/cavatappi.jpg" alt="Plato de Cavatappi" class="w-32 h-32 mx-auto rounded-full border-2 border-transparent hover:border-orange-500 transition duration-300">
                     <h3 class="font-semibold mt-2">Cavatappi</h3>
                 </div>
                 <div class="rounded-lg p-4 text-center">
-                    <img src="/img/tagliatelle.jpg" alt="Plato de Tagliatelle" class="w-32 h-32 mx-auto rounded-full">
+                    <img src="/img/tagliatelle.jpg" alt="Plato de Tagliatelle" class="w-32 h-32 mx-auto rounded-full border-2 border-transparent hover:border-orange-500 transition duration-300">
                     <h3 class="font-semibold mt-2">Tagliatelle</h3>
                 </div>
                 <div class="rounded-lg p-4 text-center">
-                    <img src="/img/pappardelle.jpg" alt="Plato de Pappardelle" class="w-32 h-32 mx-auto rounded-full">
+                    <img src="/img/pappardelle.jpg" alt="Plato de Pappardelle" class="w-32 h-32 mx-auto rounded-full border-2 border-transparent hover:border-orange-500 transition duration-300">
                     <h3 class="font-semibold mt-2">Pappardelle</h3>
                 </div>
             </div>
@@ -84,14 +88,14 @@
     </section>
 
     <!-- Promociones -->
-    <section id="promotions" class="py-16 bg-gradient-to-r from-orange-500 to-red-600 text-white">
+    <section id="promociones" class="py-16 bg-gradient-to-r from-orange-500 to-red-600 text-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-5xl font-extrabold mb-6">🔥 ¡Promociones Exclusivas! 🔥</h2>
+            <h2 class="text-5xl font-extrabold mb-6">¡Promociones Exclusivas!</h2>
             <p class="text-lg mb-10">Aprovechá estas ofertas antes de que desaparezcan.</p>
     
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Promo N°1 -->
-                <div class="bg-white text-gray-900 rounded-xl p-8 shadow-xl transform hover:scale-105 transition duration-300">
+                <div class="bg-white text-gray-900 rounded-xl p-8 shadow-xl border-2 border-transparent hover:border-black transition duration-300">
                     <h3 class="text-3xl font-bold">🎉 2x1 en tu Primer Pedido</h3>
                     <p class="mt-3 text-lg">Hacé tu primera compra y lleváte el doble de felicidad.</p>
                     <span class="block mt-4 text-orange-600 font-bold text-xl">Código: PRIMER2X1</span>
@@ -99,7 +103,7 @@
                 </div>
     
                 <!-- Promo N°2 -->
-                <div class="bg-white text-gray-900 rounded-xl p-8 shadow-xl transform hover:scale-105 transition duration-300">
+                <div class="bg-white text-gray-900 rounded-xl p-8 shadow-xl border-2 border-transparent hover:border-black transition duration-300">
                     <h3 class="text-3xl font-bold">🚀 10% OFF en Pedidos Grandes</h3>
                     <p class="mt-3 text-lg">Si tu compra supera los $20.000, te damos un 10% de descuento.</p>
                     <span class="block mt-4 text-orange-600 font-bold text-xl">Código: GRANDE10</span>
@@ -107,7 +111,7 @@
                 </div>
     
                 <!-- Promo N°3 -->
-                <div class="bg-white text-gray-900 rounded-xl p-8 shadow-xl transform hover:scale-105 transition duration-300">
+                <div class="bg-white text-gray-900 rounded-xl p-8 shadow-xl border-2 border-transparent hover:border-black transition duration-300">
                     <h3 class="text-3xl font-bold">💎 Cliente Frecuente = Beneficios VIP</h3>
                     <p class="mt-3 text-lg">Acumulá 5 pedidos y obtené un cupón de $6.000 para tu próxima compra.</p>
                     <span class="block mt-4 text-orange-600 font-bold text-xl">Se acredita automáticamente</span>
@@ -163,7 +167,7 @@
                         </select>
                     </div>
     
-                    <!-- Botón de enviar -->
+                    <!-- Botón de enviar el formulario con la información -->
                     <button type="submit" class="w-full bg-orange-500 text-white py-3 rounded-xl text-xl font-semibold hover:bg-orange-600 transition">
                         Reservar Ahora
                     </button>
@@ -172,10 +176,10 @@
         </div>
     </section>
     
-    <!-- Modal de éxito -->
+    <!-- Se simuka un Modal de éxito al enviar el mensaje-->
     <div id="successModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
         <div class="bg-white p-8 rounded-xl shadow-lg text-center">
-            <h3 class="text-3xl font-bold text-gray-900 mb-4">✅ ¡Reserva Confirmada!</h3>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4">¡Reserva Confirmada!</h3>
             <p class="text-gray-700">Gracias por reservar con nosotros. Te esperamos en la fecha indicada.</p>
             <p class="text-gray-700">En caso de existir algún problema, nos estarémos comunicando al correo proporcionado.</p>
             <button onclick="closeModal()" class="mt-6 bg-orange-500 text-white px-6 py-2 rounded-xl hover:bg-orange-600 transition">
@@ -184,27 +188,13 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="bg-gray-900 text-white text-center py-6">
         <h4 class="text-sm">&copy; 2025 El Refugio de Saturno. Todos los derechos reservados.</h4>
+        <span>Creado por <a href="https://carlosjcastrog.netlify.app" class="text-[#219ebc] font-semibold" target="_blank" rel="noopener noreferrer">Carlos José Castro Galante</a></span>
     </footer>
 
-    <!-- Menú hamburguesa -->
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
-
-    <!-- Función para smiluar un Modal de éxito en el formulario de reserva -->
-    <script>
-        document.getElementById("reservationForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            document.getElementById("successModal").classList.remove("hidden");
-        });
-        
-        function closeModal() {
-            document.getElementById("successModal").classList.add("hidden");
-        }
-        </script>
+    <!-- Scripts -->
+    <script src="/script.js"></script>
 </body>
 </html>
