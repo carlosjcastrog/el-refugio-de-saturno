@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Refugio de Saturno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">El Refugio de Saturno</a>
+            <button id="menu-toggle" class="block md:hidden text-gray-700 focus:outline-none">
+                ☰
+            </button>
+            <ul id="menu" class="hidden md:flex space-x-6">
+                <li><a href="#inicio" class="hover:text-gray-600">Inicio</a></li>
+                <li><a href="#menu" class="hover:text-gray-600">Menú</a></li>
+                <li><a href="#contacto" class="hover:text-gray-600">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Menú para resoluciones pequeñas - Menú hamburguesa -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white p-4 shadow-md">
+        <ul class="space-y-4">
+            <li><a href="#inicio" class="block">Inicio</a></li>
+            <li><a href="#menu" class="block">Menú</a></li>
+            <li><a href="#contacto" class="block">Contacto</a></li>
+        </ul>
+    </div>
+    
+    <!-- Sección Menú -->
+    <section id="menu" class="py-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Nuestro Menú</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Card ejemplo -->
+                <div class="rounded-lg p-4 text-center">
+                    <img src="/img/spaghetti.jpg" alt="Plato" class="w-32 h-32 mx-auto rounded-full border-dashed border-2 border-gray-300">
+                    <h3 class="font-semibold mt-2">Oven-Baked Ribs</h3>
+                </div>
+                <div class="brounded-lg p-4 text-center">
+                    <img src="/mnt/data/menu.png" alt="Plato" class="w-32 h-32 mx-auto rounded-full border-dashed border-2 border-gray-300">
+                    <h3 class="font-semibold mt-2">Mozzarella Sticks</h3>
+                </div>
+                <div class="rounded-lg p-4 text-center">
+                    <img src="/mnt/data/menu.png" alt="Plato" class="w-32 h-32 mx-auto rounded-full border-dashed border-2 border-gray-300">
+                    <h3 class="font-semibold mt-2">Fajitas</h3>
+                </div>
+                <div class="rounded-lg p-4 text-center">
+                    <img src="/mnt/data/menu.png" alt="Plato" class="w-32 h-32 mx-auto rounded-full border-dashed border-2 border-gray-300">
+                    <h3 class="font-semibold mt-2">Banana Nut Bread</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Menú más elegido -->
+    <section id="menu" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800">Más elegido por nuestros clientes</h2>
+            <p class="text-center text-gray-600 mb-10">Descubrí nuestros mejores platos</p>
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="img/plato1.jpg" alt="Plato 1" class="w-full h-40 object-cover rounded-lg">
+                    <h3 class="text-lg font-semibold mt-4">Plato Especial</h3>
+                    <p class="text-gray-600">Descripción breve del platillo.</p>
+                    <span class="block text-orange-500 font-bold mt-2">$15.000</span>
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="img/plato2.jpg" alt="Plato 2" class="w-full h-40 object-cover rounded-lg">
+                    <h3 class="text-lg font-semibold mt-4">Hamburguesa Clásica</h3>
+                    <p class="text-gray-600">Carne, queso, lechuga y salsa especial.</p>
+                    <span class="block text-orange-500 font-bold mt-2">$12.500</span>
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="img/plato3.jpg" alt="Plato 3" class="w-full h-40 object-cover rounded-lg">
+                    <h3 class="text-lg font-semibold mt-4">Pizza Napolitana</h3>
+                    <p class="text-gray-600">Masa fina, salsa casera y queso mozzarella.</p>
+                    <span class="block text-orange-500 font-bold mt-2">$18.000</span>
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="img/plato4.jpg" alt="Plato 4" class="w-full h-40 object-cover rounded-lg">
+                    <h3 class="text-lg font-semibold mt-4">Ensalada Gourmet</h3>
+                    <p class="text-gray-600">Fresca, saludable y llena de sabor.</p>
+                    <span class="block text-orange-500 font-bold mt-2">$9.500</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promociones -->
+    <section id="promotions" class="py-16 bg-gradient-to-r from-orange-500 to-red-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-extrabold mb-6">🔥 ¡Promociones Exclusivas! 🔥</h2>
+            <p class="text-lg mb-10">Aprovechá estas ofertas antes de que desaparezcan.</p>
+    
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Promo 1 -->
+                <div class="bg-white text-gray-900 rounded-xl p-8 shadow-xl transform hover:scale-105 transition duration-300">
+                    <h3 class="text-3xl font-bold">🎉 2x1 en tu Primer Pedido</h3>
+                    <p class="mt-3 text-lg">Hacé tu primera compra y lleváte el doble de felicidad.</p>
+                    <span class="block mt-4 text-orange-600 font-bold text-xl">Código: PRIMER2X1</span>
+                    <span class="block mt-4 text-black text-xs">Se habilita sólo si es tu primera compra.</span>
+                </div>
+    
+                <!-- Promo 2 -->
+                <div class="bg-white text-gray-900 rounded-xl p-8 shadow-xl transform hover:scale-105 transition duration-300">
+                    <h3 class="text-3xl font-bold">🚀 10% OFF en Pedidos Grandes</h3>
+                    <p class="mt-3 text-lg">Si tu compra supera los $20.000, te damos un 10% de descuento.</p>
+                    <span class="block mt-4 text-orange-600 font-bold text-xl">Código: GRANDE10</span>
+                    <span class="block mt-4 text-black text-xs">Se habilita sólo si la compra superó el monto indicado.</span>
+                </div>
+    
+                <!-- Promo 3 -->
+                <div class="bg-white text-gray-900 rounded-xl p-8 shadow-xl transform hover:scale-105 transition duration-300">
+                    <h3 class="text-3xl font-bold">💎 Cliente Frecuente = Beneficios VIP</h3>
+                    <p class="mt-3 text-lg">Acumulá 5 pedidos y obtené un cupón de $6.000 para tu próxima compra.</p>
+                    <span class="block mt-4 text-orange-600 font-bold text-xl">Se acredita automáticamente</span>
+                </div>
+            </div>
+    
+            <button class="mt-10 px-8 py-4 bg-white text-orange-600 text-xl font-bold rounded-xl hover:bg-gray-100">
+                ¡Aprovechá las Promos Ahora!
+            </button>
+        </div>
+    </section>
+
+    <!-- Menú hamburguesa -->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
