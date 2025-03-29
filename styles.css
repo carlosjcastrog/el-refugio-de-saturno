@@ -14,14 +14,14 @@
     transform: translateY(0);
 }
 
-/* Estilo inicial: oculto y con escala menor */
+/* ---------- Estilo inicial: oculto y con escala menor ---------- */
 .fadePrice-in {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Cuando la clase "showPrice" se activa */
+/* ---------- Cuando la clase "showPrice" se activa, se muestra los elementos ---------- */
 .fadePrice-in.showPrice {
     opacity: 1;
     transform: translateY(0);
