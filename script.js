@@ -1,4 +1,4 @@
-// Permite obtener o llamar al boton del menú
+// Permite obtener o llamar al botón del menú
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 
@@ -6,26 +6,66 @@ const mobileMenu = document.getElementById('mobile-menu');
 const reservasForm = document.getElementById("reservasForm");
 const successModal = document.getElementById("successModal");
 
-// Permite mostrar u ocultar el menú
-menuToggle.addEventListener('click', function() {
-    mobileMenu.classList.toggle('hidden');
-});
-
-// Ejecuta cuando la página ha cargado completamente
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("reservasForm");
-
-    // Simula capturar la información del formulario y muestra el modal de reserva confirmada
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-        successModal.classList.remove("hidden");
+// Esto permite verificar que los elementos existan antes de agregar eventos
+if (menuToggle && mobileMenu) {
+    // Permite mostrar u ocultar el menú
+    menuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
     });
+}
 
-    // Permite cerrar el modal
-    function closeModal() {
-        successModal.classList.add("hidden");
+document.addEventListener("DOMContentLoaded", function () {
+    // Permite verificar que el formulario exista antes de intentar agregar eventos
+    if (reservasForm && successModal) {
+        // Simula capturar la información del formulario y muestra el modal de reserva confirmada
+        reservasForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            successModal.classList.remove("hidden");
+        });
+
+        // Permite cerrar el modal una vez confirmada la reserva con exito
+        function closeModal() {
+            successModal.classList.add("hidden");
+        }
+
+        // Permite verificar que el botón de cerrar modal exista antes de agregar el evento
+        const closeButton = document.querySelector('#successModal button');
+        if (closeButton) {
+            closeButton.addEventListener('click', closeModal);
+        }
     }
 
-    // Permite agregar el evento para que el modal pueda cerrarse
-    document.querySelector('#successModal button').addEventListener('click', closeModal);
+    // Animación para carga de elementos en las distintas páginas del restaurante
+    const sections = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => observer.observe(section));
+});
+
+// Animación general para aparición secuencial
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".fade-in");
+    items.forEach((item, index) => {
+        setTimeout(() => {
+            item.classList.add("show");
+        }, index * 300);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const prices = document.querySelectorAll(".fadePrice-in");
+    
+    prices.forEach((price, index) => {
+        setTimeout(() => {
+            price.classList.add("showPrice");
+        }, index * 400);
+    });
 });
