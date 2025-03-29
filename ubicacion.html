@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación - El Refugio de Saturno</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+   <!-- Navbar -->
+   <nav class="bg-white shadow-md p-4" aria-label="Menú de navegación">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="/index.html" class="text-xl font-bold" aria-label="Inicio">🪐 El Refugio de Saturno</a>
+        <button id="menu-toggle" class="block md:hidden text-gray-700 focus:outline-none" aria-label="Abrir menú">☰</button>
+        <ul id="menu" class="hidden md:flex space-x-6">
+            <li><a href="/index.html" class="hover:text-orange-600">Inicio</a></li>
+            <li><a href="#menu" class="hover:text-orange-600">Menú</a></li>
+            <li><a href="#promociones" class="hover:text-orange-600">Promociones</a></li>
+            <li><a href="#reservas" class="hover:text-orange-600">Reservas</a></li>
+            <li><a href="/ubicacion.html" class="hover:text-orange-600">Ubicación</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Menú hamburguesa -->
+<div id="mobile-menu" class="hidden md:hidden bg-white p-4 shadow-md">
+    <ul class="space-y-4">
+        <li><a href="/index.html" class="block">Inicio</a></li>
+        <li><a href="#menu" class="block">Menú</a></li>
+        <li><a href="#promociones" class="hover:text-gray-600">Promociones</a></li>
+        <li><a href="#reservas" class="block">Reservas</a></li>
+        <li><a href="/precios.html" class="hover:text-orange-600">Precios</a></li>
+        <li><a href="/ubicacion.html" class="hover:text-gray-600">Ubicación</a></li>
+    </ul>
+</div>
+
+    <!-- Sección Mapa -->
+    <section class="py-10 text-center">
+        <h1 class="text-4xl font-bold mb-4">¿Dónde estámos?</h1>
+        <p class="text-lg text-gray-600 mb-6">Visitános y probá nuestras comidas</p>
+        
+        <div class="container mx-auto px-4">
+            <div class="w-full h-96 bg-gray-300 rounded-lg overflow-hidden shadow-lg">
+                <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2044.140114064679!2d-65.77927541521558!3d-28.468016035086137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sar!4v1743215482238!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Información de contacto -->
+    <section class="py-10 bg-white text-center">
+        <h2 class="text-3xl font-bold mb-4">Contactános</h2>
+        <p class="text-lg text-gray-600">Si tenes alguna consulta, llamános o envíanos un correo.</p>
+        <div class="mt-6">
+            <p class="text-xl font-semibold">📞 Teléfono: <a href="tel:+5491112345678" class="text-orange-600">+54 9 11 1234-5678</a></p>
+            <p class="text-xl font-semibold mt-2">📧 Correo: <a href="mailto:reservas@refugiosaturno.com" class="text-orange-600">reservas@refugiosaturno.com</a></p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <h4 class="text-sm">&copy; 2025 El Refugio de Saturno. Todos los derechos reservados.</h4>
+        <span>Creado por <a href="https://carlosjcastrog.netlify.app" class="text-[#219ebc] font-semibold" target="_blank" rel="noopener noreferrer">Carlos José Castro Galante</a></span>
+    </footer>
+</html>
