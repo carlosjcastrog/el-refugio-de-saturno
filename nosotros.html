@@ -15,15 +15,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 font-poppins">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md p-4 sticky top-0 z-50">
+<body class="bg-gray-100">
+     <!-- Navbar -->
+     <nav class="bg-white shadow-md p-4" aria-label="Menú de navegación">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="/index.html" class="text-xl font-bold flex items-center space-x-2">
+            <a href="/index.html" class="text-xl font-bold flex items-center space-x-2" aria-label="Inicio">
                 <img src="/img/logo.jpg" alt="Logo" class="w-10 h-10">
                 <span>El Refugio de Saturno</span>
             </a>
-            <ul class="hidden md:flex space-x-6">
+            <button id="menu-toggle" class="block md:hidden text-gray-700 focus:outline-none" aria-label="Abrir menú">☰</button>
+            <ul id="menu" class="hidden md:flex space-x-6">
                 <li><a href="/index.html" class="hover:text-orange-600">Inicio</a></li>
                 <li><a href="/nosotros.html" class="hover:text-orange-600">Nosotros</a></li>
                 <li><a href="/precios.html" class="hover:text-orange-600">Precios</a></li>
@@ -32,15 +33,15 @@
         </div>
     </nav>
 
-    <!-- Menú hamburguesa -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white p-4 shadow-md">
-        <ul class="space-y-4">
-            <li><a href="/index.html" class="block">Inicio</a></li>
-            <li><a href="/nosotros.html" class="block">Nosotros</a></li>
-            <li><a href="/precios.html" class="block">Precios</a></li>
-            <li><a href="/ubicacion.html" class="hover:text-gray-600">Ubicación</a></li>
-        </ul>
-    </div>
+<!-- Menú hamburguesa -->
+<div id="mobile-menu" class="hidden md:hidden bg-white p-4 shadow-md">
+    <ul class="space-y-4">
+        <li><a href="/index.html" class="block hover:text-orange-600">Inicio</a></li>
+        <li><a href="/nosotros.html" class="block hover:text-orange-600">Nosotros</a></li>
+        <li><a href="/precios.html" class="block hover:text-orange-600">Precios</a></li>
+        <li><a href="/ubicacion.html" class="block hover:text-orange-600">Ubicación</a></li>
+    </ul>
+</div>
 
     <!-- Nosotros -->
     <section class="py-16 bg-cover bg-center text-center text-white" style="background-image: url('/img/restaurant.jpg');">
