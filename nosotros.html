@@ -8,38 +8,34 @@
     <meta name="keywords" content="restaurante, pastas, comida italiana, promociones, reservas">
     <meta name="author" content="Carlos José Castro Galante">
     <title>El Refugio de Saturno - Nosotros</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-100">
      <!-- Navbar -->
-     <nav class="bg-white shadow-md p-4" aria-label="Menú de navegación">
+     <nav class="bg-[#001219] shadow-md p-4" aria-label="Menú de navegación">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="/index.html" class="text-xl font-bold flex items-center space-x-2" aria-label="Inicio">
+            <a href="/index.html" class="text-white text-xl font-bold flex items-center space-x-2" aria-label="Inicio">
                 <img src="/img/logo.jpg" alt="Logo" class="w-10 h-10">
                 <span>El Refugio de Saturno</span>
             </a>
-            <button id="menu-toggle" class="block md:hidden text-gray-700 focus:outline-none" aria-label="Abrir menú"><i class='bx bx-menu text-3xl text-black'></i></button>
+            <button id="menu-toggle" class="block md:hidden text-gray-700 focus:outline-none"><i class='text-white bx bx-menu text-3xl text-black'></i></button>
             <ul id="menu" class="hidden md:flex space-x-6">
-                <li><a href="/index.html" class="hover:text-orange-600">Inicio</a></li>
-                <li><a href="/nosotros.html" class="hover:text-orange-600">Nosotros</a></li>
-                <li><a href="/precios.html" class="hover:text-orange-600">Precios</a></li>
-                <li><a href="/ubicacion.html" class="hover:text-orange-600">Ubicación</a></li>
+                <li><a href="/index.html" class="text-white hover:text-orange-600 transition duration-300">Inicio</a></li>
+                <li><a href="/nosotros.html" class="text-white hover:text-orange-600 transition duration-300">Nosotros</a></li>
+                <li><a href="/precios.html" class="text-white hover:text-orange-600 transition duration-300">Precios</a></li>
+                <li><a href="/ubicacion.html" class="text-white hover:text-orange-600 transition duration-300">Ubicación</a></li>
             </ul>
         </div>
     </nav>
 
 <!-- Menú hamburguesa -->
-<div id="mobile-menu" class="hidden md:hidden bg-white p-4 shadow-md">
+<div id="mobile-menu" class="bg-[#001219] hidden md:hidden p-4 shadow-md">
     <ul class="space-y-4">
-        <li><a href="/index.html" class="block hover:text-orange-600">Inicio</a></li>
-        <li><a href="/nosotros.html" class="block hover:text-orange-600">Nosotros</a></li>
-        <li><a href="/precios.html" class="block hover:text-orange-600">Precios</a></li>
-        <li><a href="/ubicacion.html" class="block hover:text-orange-600">Ubicación</a></li>
+        <li><a href="/index.html" class="text-white block hover:text-orange-600 transition duration-300">Inicio</a></li>
+        <li><a href="/nosotros.html" class="text-white block hover:text-orange-600 transition duration-300">Nosotros</a></li>
+        <li><a href="/precios.html" class="text-white block hover:text-orange-600 transition duration-300">Precios</a></li>
+        <li><a href="/ubicacion.html" class="text-white block hover:text-orange-600 transition duration-300">Ubicación</a></li>
     </ul>
 </div>
 
@@ -97,19 +93,13 @@
 </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center py-6">
+    <footer class="bg-[#001219] text-white text-center py-6">
         <div class="mb-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="mx-2 text-xl hover:text-orange-600">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="mx-2 text-xl hover:text-orange-600 transition duration-300">
                 <i class='bx bxl-facebook'></i>
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="mx-2 text-xl hover:text-orange-600">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="mx-2 text-xl hover:text-orange-600 transition duration-300">
                 <i class='bx bxl-instagram'></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="mx-2 text-xl hover:text-orange-600">
-                <i class='bx bxl-twitter'></i>
-            </a>
-            <a href="https://wa.me/5491112345678" target="_blank" rel="noopener noreferrer" class="mx-2 text-xl hover:text-orange-600">
-                <i class='bx bxl-whatsapp'></i>
             </a>
         </div>
         <p class="text-sm">&copy; 2025 El Refugio de Saturno. Todos los derechos reservados.</p>
